@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">Jan Georgs Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="./index.html">Blog</a>
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container d-flex flex-column align-items-center justify-content-center mb-4">
+      <header class=" contact-header my-4">
+        <img class="contact-cover rounded w-100" src="/img/pexels-solen-feyissa-5744250.jpg" alt="cover">
+      </header>
+      <section class="form-section rounded shadow">
+        <div class="m-3">
+          <h2 class="fw-bold">Send us a message</h2>
+          <p>Fill inn the form</p>
+          <p>Do you have any questions or suggestions? Please fill in the form below.</p>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Name *</label>
+              <div class="d-flex">
+                <i class="bi bi-person-fill card-text fs-5 bg-dark bg-opacity-10 h-100 py-1 px-2 rounded-start"></i>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email *</label>
+              <div class="d-flex">
+                <i class="bi bi-envelope-fill card-text fs-6 bg-dark bg-opacity-10 h-100 rounded-start"></i>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message *</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Enter your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary fw-bold text-uppercase my-2"><span>></span> Send</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="navbar bg-dark navbar-dark d-flex flex-column justify-content-center align-items-center">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+      </ul>
+      <p class="text-center text-muted">Jan Georg Henriksen</p>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/contact.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

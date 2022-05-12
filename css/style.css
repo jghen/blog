@@ -1,0 +1,63 @@
+html, body {
+  max-height: fit-content;
+  margin: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  place-items: center;
+  gap: 1rem;
+}
+.card {
+  height: 38rem;
+  width: 350px;
+  padding: 0;
+  margin-top: .5rem;
+  transition: .3s linear;
+  backface-visibility: hidden;
+   -webkit-font-smoothing: subpixel-antialiased;
+   will-change: transform;  
+}
+
+section, article, div, p, h2, h4, b {
+ transform-style: preserve-3d;
+ backface-visibility: hidden;
+}
+.card:hover {  
+ transform-style: preserve-3d;
+ backface-visibility: hidden;
+ -webkit-transform: scale(1.02) translate3d( 0, 0, 0) perspective(1px);
+ -moz-transform: scale(1.02) translate3d( 0, 0, 0) perspective(1px);
+   -o-transform: scale(1.02) translate3d( 0, 0, 0) perspective(1px);
+  -ms-transform: scale(1.02) translate3d( 0, 0, 0) perspective(1px);
+      transform: scale(1.02) translate3d( 0, 0, 0) perspective(1px);
+}
+
+.contact-header {
+  position: relative;
+  height: calc(10rem + 10vw + 4vh);
+  overflow: hidden;
+}
+.contact-cover {
+  vertical-align: middle;
+}
+
+.form-section {
+
+  background-color: white;
+  width: 100%;
+}
+
+
+label {
+  margin: .3rem auto;
+}
+.bi-envelope-fill {
+  padding: .6rem .7rem;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
